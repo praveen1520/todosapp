@@ -1,0 +1,56 @@
+POST http://localhost:3523/register
+Content-Type: application/json
+
+{
+  "username": "Praveen150",
+  "password": "pravee#"
+}
+###
+
+POST http://localhost:3523/login
+Content-Type: application/json
+
+{
+  "username": "raveen150",
+  "password": "pravee#"
+}
+
+###
+
+GET http://localhost:3523/tasks
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlByYXZlZW4xNTAiLCJ1c2VyaWQiOjI0LCJpYXQiOjE3MzE0ODUzNjd9.7R0UuHUyVmfiYfnlNPDu3t__5VLSvO3sWgy5bay3mC4
+
+###
+
+
+
+
+POST http://localhost:3523/addtask
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlByYXZlZW4xNTAiLCJ1c2VyaWQiOjI0LCJpYXQiOjE3MzE0ODUzNjd9.7R0UuHUyVmfiYfnlNPDu3t__5VLSvO3sWgy5bay3mC4
+
+
+{
+    "title": "Complte Backend Setup",
+    "description": "Finsh setting up all backend routes and database",
+    "date": "2024-12-14",
+    "status": "pending"
+}
+
+###
+
+
+
+
+
+
+PUT http://localhost:3523/updatetask/:e592e3d4-d37a-4c15-a0df-6d296c42b682
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlByYXZlZW4xNTAiLCJ1c2VyaWQiOjI0LCJpYXQiOjE3MzE0ODcwMjl9.axpNQyfGRPB5mXfOpezhWVJDGXt_sO13Jlrgh91WmFQ
+Content-Type: application/json
+
+{
+    "title": "Complete CSS Course",
+    "description": "Complete all modules and assessments",
+    "date": "2024-12-01",
+    "status": "completed"
+}
